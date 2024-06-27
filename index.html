@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Mushrooms</title>
+    
+  <!--link to bootstrap css-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--my link to css-->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+
+  <!--links js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ 
+  <!--link from ligthbox gallery-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+ 
+<header class="container-sm-fluid">
+
+
+<!--Button for modal-->
+
+<button data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success" >Sign in for more info!</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-fullscreen-down">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="h2 text-bg-success btn-md">Log in</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <form action="code.php" method="post" class="needs-validation" novalidate>
+                  <div>
+                      <label class="form-label" for="userName">User Name</label>
+                      <input class="form-control form-control-md" type="text" required pattern="[a-zA-Z]+" placeholder="John Doe" id="userName">
+                      <div class="valid-feedback">This field is ok</div>
+                      <div class="invalid-feedback">The username doesn’t exist</div>
+                  </div>
+                  <!-- Close user name -->
+                  <div class="position-relative">
+                      <label for="password" class="form-label">Password</label>
+                      <input class="form-control form-control-md" type="password" required pattern="[a-zA-Z]+" placeholder="****" id="password">
+                      <div class="valid-tooltip">Ok</div>
+                      <div class="invalid-tooltip">The password is wrong.</div>
+                  </div>
+                  <!-- Close password -->
+                  <div class="modal-footer">
+                      <button class="btn btn-outline-success" type="submit">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <!-- Close modal content -->
+  </div>
+  <!-- Close modal dialog container -->
+</div>
+<!-- Close modal main div -->
+
+
+<!----MENU-->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"> Melena de Leona
+
+      <img src="Imagenes/icons8-seta-48.png" alt="Logo" width="60" height="44" class="d-inline-block align-text-top"> <!--brand image-->
+    </a> 
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenu" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.instagram.com">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://web.whatsapp.com/">Whatsapp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://remfungi.com/">Treatment</a>
+        </li>
+      
+      
+      </ul>
+    </div> 
+  </div>
+</nav>
+
+</header> <!--close my header-->
+
+<body>
+  
+<!----img carrousel-->
+
+<div class="container">
+  <div class="row">
+    <div id="myCarousel" class="carousel slide carousel-fade col-md-12" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="Imagenes/james-wainscoat-f50eYBK6qPA-unsplash.jpg" data-lightbox="gallery" data-title="Reishi">
+            <img src="Imagenes/james-wainscoat-f50eYBK6qPA-unsplash.jpg" class="d-block w-100 img-thumbnail img-fluid rounded" alt="REISHI">
+          </a>
+        </div> <!--CLOSING FIRST IMG-->
+
+        <div class="carousel-item">
+          <a href="Imagenes/jaap-straydog-o9JapjMqjfc-unsplash.jpg" data-lightbox="gallery" data-title="Cordyceps">
+            <img src="Imagenes/jaap-straydog-o9JapjMqjfc-unsplash.jpg" class="d-block w-100 img-thumbnail img-fluid rounded" alt="Cola de pavo">
+          </a>
+        </div> <!--CLOSING SECOND IMG-->
+
+      </div> <!--CLOSING CAROUSEL INNER-->
+
+      <!--next/prev controls-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div> <!--CLOSING MY CAROUSEL-->
+  </div> <!--CLOSING ROW-->
+</div> <!--CLOSING CONTAINER-->
+
+<p class="text-white">Immersed in an artificial world, our bodies have physiologically adapted to withstand stress. We strongly believe that nature is wise and provides us with everything we need to live well.<p>
+<p class="text-white"> They are ancient beings, plants and fungi, that adapted to hostile environments and extreme, adverse temperatures. For this reason, in the same way they adapted over thousands of years to different ecosystems, they developed regulatory (adaptogenic) properties for humans.</p>
+<p class="text-white">They help us reduce our body's exaggerated response to stress in these modern times with more technology, social media, work stress, the need for immediacy, and so on.</p>
+
+
+
+
+<section class="container-fluid">
+
+<h2 class="text-bg-success col-lg-10"> Our magic mushrooms</h2>
+
+
+<div class="row mb-2 justify-content-between">
+<div class="bg-black text-white col-lg-3 text-align-center col-md-5"><strong>Lion´s mane:</strong>  It increases cognitive capacity, such as memory and the process of  learning. These effects are related to its neuroprotective properties and its ability to modulate brain plasticity.</div>
+<div class="bg-black text-white col-lg-3 col-md-5"> <strong>Reishi:</strong> It is called the mushroom of immortality because of its wide-ranging benefits. Specific applications include modulating the immune system, hepatoprotection, bacteriostasis, and more. </div>
+<div class="bg-black text-white col-lg-3 col-md-5"> <strong>Cordyceps:</strong> Its effectiveness is particularly evident in improving physical and sexual energy, as well as mood and humor. It is frequently used by athletes or individuals with high energy demands.</div>
+
+
+<div class="d-none d-lg-block w-lg-100"></div>
+<div class="bg-black text-white col-lg-3 col-md-5"><strong>Lion´s mane treatment:</strong> In our triple pure extract spans six months to ensure that the results are long-lasting. Although the primary effects are often noticed within a few weeks, discontinuing the treatment before completing the cycle can result in the loss of achieved progress.</div>
+<div class="bg-black text-white col-lg-3 col-md-5"> <strong>Reishi treatment:</strong>  Its application can vary from an intensive treatment of a few weeks to a long-term treatment of 90 to 120 consecutive days. The dosage is adjusted according to the need and can be combined with other extracts depending on the situation to be resolved.</div>
+<div class="bg-black text-white col-lg-3 col-md-5"> <strong>Cordyceps treatment:</strong> Maintaining serenity and normalizing essential processes are key characteristics of this adaptogen, making it a frequent companion in various treatments. It is recommended to consume doses of 2 to 6 ml daily. It can be part of 60-day treatments or consumed continuously without breaks.
+
+
+</div>
+
+
+</div>
+</section>
+<!---end of mushrooms data-->
+<footer class="container-fluid"></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+     
+      'wrapAround': true,
+      'albumLabel': "Imagen %1 de %2"
+    })
+</script>
+
+
+<script src="JS/code.js"></script>
+
+
+</body>
+</html>
